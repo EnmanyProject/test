@@ -275,7 +275,7 @@ const Engine = (()=> {
 
   // 같은 폴더의 scenario.json 자동 로딩 시도
   try{
-    const resp = await fetch('scenario.json', {cache:'no-store'});
+    const resp = await fetch('scenario_full.json', {cache:'no-store'});
     if(resp.ok){
       const data = await resp.json();
       Engine.replaceScenario(data);
